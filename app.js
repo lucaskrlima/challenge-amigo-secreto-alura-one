@@ -1,9 +1,10 @@
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
+//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação.
+//Aqui você deverá desenvolver a lógica para resolver o problema.
 
 //Variável do tipo array, que armazena os nomes dos amigos inseridos.
 let amigos = []; 
 
-//Função que permita ao usuário inserir um nome no campo de texto 
+//Função que permite ao usuário inserir um nome no campo de texto 
 function adicionarAmigo(){
     const inputAmigo = document.getElementById("amigo"); 
     let nome = inputAmigo.value.trim();
@@ -29,7 +30,7 @@ function adicionarAmigo(){
 
 }   
 
-//Função que percorra o array amigos e adiciona cada nome como um elemento <li> dentro de uma lista HTML.
+//Função que percorre o array amigos e adiciona cada nome como um elemento <li> dentro de uma lista HTML.
 function atualizarLista(){
     const listaAmigos = document.getElementById('listaAmigos'); 
     listaAmigos.innerHTML = ""; //garante que não haja nomes duplicados ao atualizar
@@ -58,7 +59,7 @@ function removerAmigo(index) {
 }
 
 
-//Função que selecione aleatoriamente um dos nomes armazenados no array amigos.
+//Função que seleciona aleatoriamente um dos nomes armazenados no array amigos.
 function sortearAmigo(){
     if(amigos.length === 0){
         alert("Adicione um amigo antes de sortear!"); 
